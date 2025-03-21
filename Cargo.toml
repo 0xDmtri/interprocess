@@ -79,17 +79,17 @@ doc_cfg = []
 
 [dependencies]
 doctest-file = "1.0.0"
-tokio = { version = "1.36.0", features = [
+tokio = { version = "1.44.1", features = [
     "sync",
     "rt",
     "net",
     "time",
     "io-util",
 ], optional = true }
-futures-core = { version = "0.3.28", optional = true }
+futures-core = { version = "0.3.31", optional = true }
 
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.52.0", features = [
+windows-sys = { version = "0.59.0", features = [
     "Win32_Foundation",
     "Win32_Security",
     "Win32_Security_Authorization",
@@ -101,7 +101,7 @@ windows-sys = { version = "0.52.0", features = [
     "Win32_System_SystemServices",
     "Win32_System_LibraryLoader",
 ] }
-tokio = { version = "1.36.0", features = [
+tokio = { version = "1.44.1", features = [
     "sync",
     "rt-multi-thread",
     "fs",
@@ -110,19 +110,19 @@ tokio = { version = "1.36.0", features = [
     "io-util",
 ], optional = true }
 recvmsg = "1.0.0"
-widestring = "1.0.2"
+widestring = "1.2.0"
 
 [target.'cfg(unix)'.dependencies]
-libc = { version = "0.2.137", features = ["extra_traits"] }
+libc = { version = "0.2.171", features = ["extra_traits"] }
 
 [dev-dependencies]
-tokio = { version = "1.36.0", features = [
+tokio = { version = "1.44.1", features = [
     "sync",
     "rt-multi-thread",
     "io-util",
     "macros",
 ] }
-color-eyre = "0.6.2"
+color-eyre = "0.6.3"
 
 [lints.rust]
 unsafe_op_in_unsafe_fn = "forbid"
