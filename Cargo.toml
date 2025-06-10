@@ -79,7 +79,7 @@ doc_cfg = []
 
 [dependencies]
 doctest-file = "1.0.0"
-tokio = { version = "1.44.1", features = [
+tokio = { version = "1.45.1", features = [
     "sync",
     "rt",
     "net",
@@ -101,7 +101,7 @@ windows-sys = { version = "0.59.0", features = [
     "Win32_System_SystemServices",
     "Win32_System_LibraryLoader",
 ] }
-tokio = { version = "1.44.1", features = [
+tokio = { version = "1.45.1", features = [
     "sync",
     "rt-multi-thread",
     "fs",
@@ -113,16 +113,16 @@ recvmsg = "1.0.0"
 widestring = "1.2.0"
 
 [target.'cfg(unix)'.dependencies]
-libc = { version = "0.2.171", features = ["extra_traits"] }
+libc = { version = "0.2.172", features = ["extra_traits"] }
 
 [dev-dependencies]
-tokio = { version = "1.44.1", features = [
+tokio = { version = "1.45.1", features = [
     "sync",
     "rt-multi-thread",
     "io-util",
     "macros",
 ] }
-color-eyre = "0.6.3"
+color-eyre = "0.6.5"
 
 [lints.rust]
 unsafe_op_in_unsafe_fn = "forbid"
