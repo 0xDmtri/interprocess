@@ -79,7 +79,7 @@ doc_cfg = []
 
 [dependencies]
 doctest-file = "1.0.0"
-tokio = { version = "1.46.1", features = [
+tokio = { version = "1.47.1", features = [
     "sync",
     "rt",
     "net",
@@ -101,7 +101,7 @@ windows-sys = { version = "0.60.2", features = [
     "Win32_System_SystemServices",
     "Win32_System_LibraryLoader",
 ] }
-tokio = { version = "1.46.1", features = [
+tokio = { version = "1.47.1", features = [
     "sync",
     "rt-multi-thread",
     "fs",
@@ -116,7 +116,7 @@ widestring = "1.2.0"
 libc = { version = "0.2.174", features = ["extra_traits"] }
 
 [dev-dependencies]
-tokio = { version = "1.46.1", features = [
+tokio = { version = "1.47.1", features = [
     "sync",
     "rt-multi-thread",
     "io-util",
