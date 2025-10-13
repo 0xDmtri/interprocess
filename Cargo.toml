@@ -1,12 +1,12 @@
 [package]
 name         = "interprocess"
-version      = "2.2.3"
-rust-version = "1.75"
-edition      = "2021"
-authors      = ["Goat <v.toncharov@gmail.com>"]
+version      = "2.3.0"
+rust-version = "1.85"
+edition      = "2024"
+authors      = ["Dmtri <0xDmtri@proton.me>"]
 license      = "MIT OR Apache-2.0"
 readme       = "README.md"
-repository   = "https://github.com/kotauskas/interprocess"
+repository   = "https://github.com/0xDmtri/interprocess"
 
 description = "Interprocess communication toolkit"
 categories  = ["os", "os::unix-apis", "os::windows-apis", "asynchronous"]
@@ -89,7 +89,7 @@ tokio = { version = "1.47.1", features = [
 futures-core = { version = "0.3.31", optional = true }
 
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.61.0", features = [
+windows-sys = { version = "0.61.2", features = [
     "Win32_Foundation",
     "Win32_Security",
     "Win32_Security_Authorization",
@@ -110,10 +110,10 @@ tokio = { version = "1.47.1", features = [
     "io-util",
 ], optional = true }
 recvmsg = "1.0.0"
-widestring = "1.2.0"
+widestring = "1.2.1"
 
 [target.'cfg(unix)'.dependencies]
-libc = { version = "0.2.175", features = ["extra_traits"] }
+libc = { version = "0.2.177", features = ["extra_traits"] }
 
 [dev-dependencies]
 tokio = { version = "1.47.1", features = [
