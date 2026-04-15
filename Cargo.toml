@@ -78,8 +78,8 @@ tokio = ["dep:tokio", "async"]
 doc_cfg = []
 
 [dependencies]
-doctest-file = "1.1.0"
-tokio = { version = "1.50.0", features = [
+doctest-file = "1.1.1"
+tokio = { version = "1.52.0", features = [
     "sync",
     "rt",
     "net",
@@ -101,7 +101,7 @@ windows-sys = { version = "0.61.2", features = [
     "Win32_System_SystemServices",
     "Win32_System_LibraryLoader",
 ] }
-tokio = { version = "1.50.0", features = [
+tokio = { version = "1.52.0", features = [
     "sync",
     "rt-multi-thread",
     "fs",
@@ -116,7 +116,7 @@ widestring = "1.2.1"
 libc = { version = "0.2.180", features = ["extra_traits"] }
 
 [dev-dependencies]
-tokio = { version = "1.50.0", features = [
+tokio = { version = "1.52.0", features = [
     "sync",
     "rt-multi-thread",
     "io-util",
