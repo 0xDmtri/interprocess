@@ -79,14 +79,14 @@ doc_cfg = []
 
 [dependencies]
 doctest-file = "1.1.1"
-tokio = { version = "1.52.3", features = [
+tokio = { version = "1.53.1", features = [
     "sync",
     "rt",
     "net",
     "time",
     "io-util",
 ], optional = true }
-futures-core = { version = "0.3.32", optional = true }
+futures-core = { version = "0.3.33", optional = true }
 
 [target.'cfg(windows)'.dependencies]
 windows-sys = { version = "0.61.2", features = [
@@ -101,7 +101,7 @@ windows-sys = { version = "0.61.2", features = [
     "Win32_System_SystemServices",
     "Win32_System_LibraryLoader",
 ] }
-tokio = { version = "1.52.3", features = [
+tokio = { version = "1.53.1", features = [
     "sync",
     "rt-multi-thread",
     "fs",
@@ -113,10 +113,10 @@ recvmsg = "1.0.0"
 widestring = "1.2.1"
 
 [target.'cfg(unix)'.dependencies]
-libc = { version = "0.2.186", features = ["extra_traits"] }
+libc = { version = "0.2.189", features = ["extra_traits"] }
 
 [dev-dependencies]
-tokio = { version = "1.52.3", features = [
+tokio = { version = "1.53.1", features = [
     "sync",
     "rt-multi-thread",
     "io-util",
